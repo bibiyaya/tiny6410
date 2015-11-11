@@ -5,6 +5,7 @@ _start:
 	orr r0, r0, #0x13
 	mcr p15, 0, r0, c15, c2, 4
 
+	@关看门狗
 	ldr r0, =0x7E004000
 	mov r1, #0
 	str r1, [r0]
